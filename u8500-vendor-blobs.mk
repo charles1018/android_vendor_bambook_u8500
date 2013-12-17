@@ -20,6 +20,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     vendor/bambook/u8500/proprietary/bin/admsrv:system/bin/admsrv \
+    vendor/bambook/u8500/proprietary/bin/appReadHwReg:system/bin/appReadHwReg \
     vendor/bambook/u8500/proprietary/bin/at_core:system/bin/at_core \
     vendor/bambook/u8500/proprietary/bin/blue-up.sh:system/bin/blue-up.sh \
     vendor/bambook/u8500/proprietary/bin/cg2900-channel_init.sh:system/bin/cg2900-channel_init.sh \
@@ -31,15 +32,20 @@ PRODUCT_COPY_FILES += \
     vendor/bambook/u8500/proprietary/bin/cspsa-server:system/bin/cspsa-server \
     vendor/bambook/u8500/proprietary/bin/cn_server:system/bin/cn_server \
     vendor/bambook/u8500/proprietary/bin/dbus-daemon:system/bin/dbus-daemon \
+    vendor/bambook/u8500/proprietary/bin/factoryreset:system/bin/factoryreset \
+    vendor/bambook/u8500/proprietary/bin/flash_test:system/bin/flash_test \
+    vendor/bambook/u8500/proprietary/bin/intersect:system/bin/intersect \
+    vendor/bambook/u8500/proprietary/bin/ite_nmf:system/bin/ite_nmf \
     vendor/bambook/u8500/proprietary/bin/lbsd:system/bin/lbsd \
     vendor/bambook/u8500/proprietary/bin/lbsstelp:system/bin/lbsstelp \
-    vendor/bambook/u8500/proprietary/bin/modem_log_relay:system/bin/modem_log_relay \
-    vendor/bambook/u8500/proprietary/bin/mmprobed:system/bin/mmprobed \
-    vendor/bambook/u8500/proprietary/bin/modem-supervisor:system/bin/modem-supervisor \
-    vendor/bambook/u8500/proprietary/bin/msa:system/bin/msa \
-    vendor/bambook/u8500/proprietary/bin/nwm2cspsa:system/bin/nwm2cspsa \
-    vendor/bambook/u8500/proprietary/bin/psccd:system/bin/psccd \
+    vendor/bambook/u8500/proprietary/bin/rild:system/bin/rild \
     vendor/bambook/u8500/proprietary/bin/regdbdump:system/bin/regdbdump \
+    vendor/bambook/u8500/proprietary/bin/modem_log_relay:system/bin/modem_log_relay \
+    vendor/bambook/u8500/proprietary/bin/modem-supervisor:system/bin/modem-supervisor \
+    vendor/bambook/u8500/proprietary/bin/mmprobed:system/bin/mmprobed \
+    vendor/bambook/u8500/proprietary/bin/nwm2cspsa:system/bin/nwm2cspsa \
+    vendor/bambook/u8500/proprietary/bin/msa:system/bin/msa \
+    vendor/bambook/u8500/proprietary/bin/psccd:system/bin/psccd \
     vendor/bambook/u8500/proprietary/bin/simd:system/bin/simd \
     vendor/bambook/u8500/proprietary/bin/simpbd:system/bin/simpbd \
     vendor/bambook/u8500/proprietary/bin/sms_server:system/bin/sms_server \
@@ -48,10 +54,10 @@ PRODUCT_COPY_FILES += \
     vendor/bambook/u8500/proprietary/bin/ste_omxil_test:system/bin/ste_omxil_test \
     vendor/bambook/u8500/proprietary/bin/ste-adm-test:system/bin/ste-adm-test \
     vendor/bambook/u8500/proprietary/bin/stercd:system/bin/stercd \
-    vendor/bambook/u8500/proprietary/bin/tapdu:system/bin/tapdu \
-    vendor/bambook/u8500/proprietary/bin/tcat:system/bin/tcat \
     vendor/bambook/u8500/proprietary/bin/tuning_server:system/bin/tuning_server \
-    vendor/bambook/u8500/proprietary/bin/tuicc:system/bin/tuicc \
+    vendor/bambook/u8500/proprietary/bin/tinycap:system/bin/tinycap \
+    vendor/bambook/u8500/proprietary/bin/tinymix:system/bin/tinymix \
+    vendor/bambook/u8500/proprietary/bin/tinyplay:system/bin/tinyplay \
     vendor/bambook/u8500/proprietary/bin/usbid_init.sh:system/bin/usbid_init.sh \
     vendor/bambook/u8500/proprietary/etc/adm.sqlite-u8500_ab8500:system/etc/adm.sqlite-u8500_ab8500 \
     vendor/bambook/u8500/proprietary/etc/adm.sqlite-u8520_ab8505_v1:system/etc/adm.sqlite-u8520_ab8505_v1 \
@@ -140,7 +146,6 @@ PRODUCT_COPY_FILES += \
     vendor/bambook/u8500/proprietary/lib/hw/gps.montblanc.so:system/lib/hw/gps.montblanc.so \
     vendor/bambook/u8500/proprietary/lib/hw/gralloc.montblanc.so:system/lib/hw/gralloc.montblanc.so \
     vendor/bambook/u8500/proprietary/lib/hw/hwcomposer.montblanc.so:system/lib/hw/hwcomposer.montblanc.so \
-    vendor/bambook/u8500/proprietary/lib/hw/power.montblanc.so:system/lib/hw/power.montblanc.so \
     vendor/bambook/u8500/proprietary/lib/hw/sensors.montblanc.so:system/lib/hw/sensors.montblanc.so \
     vendor/bambook/u8500/proprietary/lib/hw/lights.montblanc.so:system/lib/hw/lights.montblanc.so \
     vendor/bambook/u8500/proprietary/lib/libalsactrl.so:system/lib/libalsactrl.so \
@@ -154,7 +159,6 @@ PRODUCT_COPY_FILES += \
     vendor/bambook/u8500/proprietary/lib/libbluedroid.so:system/lib/libbluedroid.so \
     vendor/bambook/u8500/proprietary/lib/libbluetoothd.so:system/lib/libbluetoothd.so \
     vendor/bambook/u8500/proprietary/lib/libbluetooth.so:system/lib/libbluetooth.so \
-    vendor/bambook/u8500/proprietary/lib/libcamera_client.so:system/lib/libcamera_client.so \
     vendor/bambook/u8500/proprietary/lib/libcamera_flash.so:system/lib/libcamera_flash.so \
     vendor/bambook/u8500/proprietary/lib/libclientgps.so:system/lib/libclientgps.so \
     vendor/bambook/u8500/proprietary/lib/libcn.so:system/lib/libcn.so \
@@ -184,11 +188,11 @@ PRODUCT_COPY_FILES += \
     vendor/bambook/u8500/proprietary/lib/libmalutil.so:system/lib/libmalutil.so \
     vendor/bambook/u8500/proprietary/lib/libmobiledynamickey.so:system/lib/libmobiledynamickey.so \
     vendor/bambook/u8500/proprietary/lib/libmpl.so:system/lib/libmpl.so \
-    vendor/bambook/u8500/proprietary/lib/libnlcom.so:system/lib/libnlcom.so \
+    vendor/bambook/u8500/proprietary/lib/libmmprobe.so:system/lib/libmmprobe.so \
+    vendor/bambook/u8500/proprietary/lib/libnl.so:system/lib/libnl.so \
     vendor/bambook/u8500/proprietary/lib/libnmf.so:system/lib/libnmf.so \
     vendor/bambook/u8500/proprietary/lib/libnmfee.so:system/lib/libnmfee.so \
     vendor/bambook/u8500/proprietary/lib/libnmftimer.so:system/lib/libnmftimer.so \
-    vendor/bambook/u8500/proprietary/lib/libNSAPI.so:system/lib/libNSAPI.so \
     vendor/bambook/u8500/proprietary/lib/libphonet.so:system/lib/libphonet.so \
     vendor/bambook/u8500/proprietary/lib/libpscc.so:system/lib/libpscc.so \
     vendor/bambook/u8500/proprietary/lib/libril.so:system/lib/libril.so \
@@ -208,12 +212,18 @@ PRODUCT_COPY_FILES += \
     vendor/bambook/u8500/proprietary/lib/libste_isp8500_firmware_primary.so:system/lib/libste_isp8500_firmware_primary.so \
     vendor/bambook/u8500/proprietary/lib/libste_isp8500_firmware_secondary.so:system/lib/libste_isp8500_firmware_secondary.so \
     vendor/bambook/u8500/proprietary/lib/libste_omxil-interface.so:system/lib/libste_omxil-interface.so \
+    vendor/bambook/u8500/proprietary/lib/libstagefright_soft_ste_aacdec.so:system/lib/libstagefright_soft_ste_aacdec.so \
+    vendor/bambook/u8500/proprietary/lib/libstagefright_soft_ste_mp3dec.so:system/lib/libstagefright_soft_ste_mp3dec.so \
+    vendor/bambook/u8500/proprietary/lib/libstagefright_ste_aacdec.so:system/lib/libstagefright_ste_aacdec.so \
+    vendor/bambook/u8500/proprietary/lib/libstagefright_ste_mp3decode.so:system/lib/libstagefright_ste_mp3decode.so \
     vendor/bambook/u8500/proprietary/lib/libomxil-bellagio.so:system/lib/libomxil-bellagio.so \
     vendor/bambook/u8500/proprietary/lib/libstecom.so:system/lib/libstecom.so \
     vendor/bambook/u8500/proprietary/lib/libstelpcutils.so:system/lib/libstelpcutils.so \
     vendor/bambook/u8500/proprietary/lib/libsterc.so:system/lib/libsterc.so \
+    vendor/bambook/u8500/proprietary/lib/ppp_sterc.so:system/lib/ppp_sterc.so \
     vendor/bambook/u8500/proprietary/lib/libtee.so:system/lib/libtee.so \
     vendor/bambook/u8500/proprietary/lib/libtrace.so:system/lib/libtrace.so \
+    vendor/bambook/u8500/proprietary/lib/libtinyalsa.so:system/lib/libtinyalsa.so \
     vendor/bambook/u8500/proprietary/lib/libu300-parser.so:system/lib/libu300-parser.so \
     vendor/bambook/u8500/proprietary/lib/libu300-ril.so:system/lib/libu300-ril.so \
     vendor/bambook/u8500/proprietary/lib/libUMP.so:system/lib/libUMP.so \
@@ -278,6 +288,7 @@ PRODUCT_COPY_FILES += \
     vendor/bambook/u8500/proprietary/usr/share/camera/config_file/omnivision_ov5640_pri_l8540.dat:system/usr/share/camera/config_file/omnivision_ov5640_pri_l8540.dat \
     vendor/bambook/u8500/proprietary/usr/share/camera/config_file/omnivision_ov5640_sec.dat:system/usr/share/camera/config_file/omnivision_ov5640_sec.dat \
     vendor/bambook/u8500/proprietary/usr/share/camera/config_file/omnivision_ov5640_sec_l8540.dat:system/usr/share/camera/config_file/omnivision_ov5640_sec_l8540.dat \
+    vendor/bambook/u8500/proprietary/usr/share/camera/config_file/omnivision_ov5640_pri.dat:system/usr/share/camera/config_file/omnivision_ov5640_pri.dat \
     vendor/bambook/u8500/proprietary/usr/share/camera/isp_fw/libste_isp8500_firmware_IMX072_primary.so:system/usr/share/camera/isp_fw/libste_isp8500_firmware_IMX072_primary.so \
     vendor/bambook/u8500/proprietary/usr/share/camera/isp_fw/libste_isp8500_firmware_IMX072_secondary.so:system/usr/share/camera/isp_fw/libste_isp8500_firmware_IMX072_secondary.so \
     vendor/bambook/u8500/proprietary/usr/share/camera/st_readHwReg.ko:system/usr/share/camera/st_readHwReg.ko \
@@ -600,6 +611,6 @@ PRODUCT_COPY_FILES += \
     vendor/bambook/u8500/proprietary/usr/share/charge/res/pic_3.rle:system/usr/share/charge/res/pic_3.rle \
     vendor/bambook/u8500/proprietary/usr/share/charge/res/pic_4.rle:system/usr/share/charge/res/pic_4.rle \
     vendor/bambook/u8500/proprietary/usr/share/charge/res/pic_5.rle:system/usr/share/charge/res/pic_5.rle \
-    vendor/bambook/u8500/proprietary/usr/share/charge/res/snda.rle:system/usr/share/charge/res/snda.rle \
     vendor/bambook/u8500/proprietary/xbin/battery_params:system/xbin/battery_params \
     vendor/bambook/u8500/proprietary/xbin/ste-cg29xx_ctrl:system/xbin/ste-cg29xx_ctrl
+
